@@ -1,0 +1,177 @@
+.response-container {
+    max-width: 680px;
+    min-width: 500px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.response-header {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.bot-label {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1.1em;
+}
+
+.response-content {
+    padding: 20px;
+}
+
+.formatted-text {
+    margin: 0;
+    line-height: 1.6;
+    color: #4a5568;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    hyphens: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.response-container:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.formatted-text p {
+    margin: 0 0 1em 0;
+}
+
+.formatted-text p:last-child {
+    margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.response-container {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@media (max-width: 700px) {
+    .response-container {
+        min-width: 90%;
+        margin: 20px 5%;
+    }
+
+    .formatted-text {
+        text-align: left;
+    }
+}
+
+.chat-container {
+    max-width: 680px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.chat-title {
+    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 2rem;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+}
+
+.chat-input {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: white;
+}
+
+.chat-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.send-button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.send-button:hover {
+    background-color: #357abd;
+}
+
+.send-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .chat-container {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    .chat-title {
+        font-size: 1.5rem;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+}
+
+/* Optional: Add some placeholder styling */
+.chat-input::placeholder {
+    color: #a0aec0;
+}
+
+/* Optional: Add a subtle animation to the form container */
+.form-container {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

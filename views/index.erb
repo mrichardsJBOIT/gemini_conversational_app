@@ -1,0 +1,28 @@
+<div class="chat-container">
+  <h1 class="chat-title">Gemini Conversation</h1>
+
+  <div class="form-container">
+    <form method='post' action='/chat'>
+      <div class="input-container">
+        <textarea
+          name='user_input'
+          rows='4'
+          placeholder="Type your message here..."
+          class="chat-input"
+        ></textarea>
+      </div>
+      <button type='submit' class="send-button">Send</button>
+    </form>
+  </div>
+
+  <% if @gemini_response %>
+    <div class="response-container">
+      <div class="response-header">
+        <span class="bot-label">Gemini</span>
+      </div>
+      <div class="response-content">
+        <%= simple_format(escape_html(@gemini_response), class: 'formatted-text') %>
+      </div>
+    </div>
+  <% end %>
+</div>

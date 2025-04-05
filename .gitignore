@@ -1,0 +1,11 @@
+# Ignore log files
+*.log
+
+# Ignore temp files
+*.tmp
+
+# Ignore vendor directory
+/vendor/
+
+# ignore env files
+.env
