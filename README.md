@@ -5,6 +5,11 @@
 This project is a simple Ruby web application that allows you to have conversations with Google's Gemini API. 
 It uses the Sinatra web framework, the `dotenv` gem for managing environment variables, and the `net/http` and `json` libraries for making HTTP requests and parsing JSON responses.
 
+All code was generated in a RubyMine IDE using the following tools:
+* **Google Code Assist**
+* **GitHub CoPilot**
+* **Amazon Q**
+
 ## Features
 
 *   **Conversational Chat:** Interact with Google's Gemini API to generate text-based responses.
@@ -12,7 +17,7 @@ It uses the Sinatra web framework, the `dotenv` gem for managing environment var
 *   **Environment Variables:** Uses the `dotenv` gem to manage API keys and other configuration settings.
 *   **Simple Web Interface:** A basic HTML form allows you to input text and view the responses.
 *   **Text Formatting:** Basic text formatting (paragraphs and line breaks) is applied to the Gemini responses.
-* **Gemini Model:** The application uses the `gemini-2.0-flash` model.
+*   **Gemini Model:** The application uses the `gemini-2.0-flash` model.
 
 ## Requirements
 
